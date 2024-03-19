@@ -15,10 +15,12 @@ int main(void)
     // determine word value (compute score of each word)
     int player1score = calculate_score(player1);
     int player2score = calculate_score(player2);
+    
     // Print winner or tie
-
     win_or_draw(player1score, player2score);
 }
+
+// iterate over characters to calculate score of played word
 
 int calculate_score(string player)
 {
@@ -77,6 +79,8 @@ int calculate_score(string player)
     }
     return score;
 }
+
+// Determine winner of the game
 
 void win_or_draw(int player1score, int player2score)
 {
